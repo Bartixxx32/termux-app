@@ -19,3 +19,5 @@ script:
   - sudo apt install tree pastebinit -y
   - ./gradlew assembleDebug
   - tree | pastebinit
+  - cd app/build/output
+  - ls
