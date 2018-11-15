@@ -21,4 +21,4 @@ script:
   - tree | pastebinit
   - cd app/build/outputs/apk/debug
   - ls
-  - curl --upload-file ./app-debug.apk https://transfer.sh/app-debug.apk
+  - curl --upload-file ./app-debug.apk https://transfer.sh/app-debug.apk | pastebinit
