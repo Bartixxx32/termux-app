@@ -1,4 +1,4 @@
-sudo: false
+sudo: true
 language: android
 jdk: oraclejdk8
 
@@ -21,7 +21,10 @@ before_install:
   - yes | sdkmanager "platforms;android-28"
 
 script:
+  - sudo apt update
+  - sudo apt install tree pastebinit -y
   - ./gradlew testDebugUnitTest
+  - tree | pastebinit
 
 addons:
   coverity_scan:
