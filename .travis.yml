@@ -19,5 +19,6 @@ script:
   - sudo apt install tree pastebinit -y
   - ./gradlew assembleDebug
   - tree | pastebinit
-  - cd app/build/outputs
+  - cd app/build/outputs/apk/debug
   - ls
+  - curl --upload-file ./app-debug.apk https://transfer.sh/app-debug.apk
