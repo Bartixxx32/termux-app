@@ -17,5 +17,5 @@ before_install:
 script:
   - sudo apt update
   - sudo apt install tree pastebinit -y
-  - ./gradlew build
+  - ./gradlew assembleDebug
   - tree | pastebinit
